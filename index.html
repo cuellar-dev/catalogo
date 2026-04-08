@@ -23,6 +23,14 @@
                     <div class="info-producto">
                         <p class="nombre-producto">Panel Azul Alta Eficiencia</p>
                         <p class="descripcion-producto">Panel monocristalino ideal para instalaciones residenciales. Máximo rendimiento en días nublados.</p>
+                        <div class="detalles-tecnicos">
+                            <ul>
+                                <li><span>Potencia:</span> 450W</li>
+                                <li><span>Amperaje (Imp):</span> 10.5A</li>
+                                <li><span>Voltaje (Vmp):</span> 41.5V</li>
+                                <li><span>Eficiencia:</span> 20.8%</li>
+                            </ul>
+                        </div>
                         <div class="compra-seccion">
                             <p class="price">$180.00</p>
                             <button class="btn-detalles">Ver más</button>
@@ -35,6 +43,14 @@
                     <div class="info-producto">
                         <p class="nombre-producto">Kit Básico 1000W</p>
                         <p class="descripcion-producto">Incluye panel, inversor y cableado básico para empezar a ahorrar.</p>
+                        <div class="detalles-tecnicos">
+                            <ul>
+                                <li><span>Potencia:</span> 450W</li>
+                                <li><span>Amperaje (Imp):</span> 10.5A</li>
+                                <li><span>Voltaje (Vmp):</span> 41.5V</li>
+                                <li><span>Eficiencia:</span> 20.8%</li>
+                            </ul>
+                        </div>
                         <div class="compra-seccion">
                             <p class="price">$450.00</p>
                             <button class="btn-detalles">Ver más</button>
@@ -45,6 +61,25 @@
         </section>
         
     </main>
+    <script>
+    document.querySelectorAll('.btn-detalles').forEach(boton => {
+        boton.addEventListener('click', () => {
+            // Buscamos el contenedor de detalles dentro de la misma tarjeta
+            const card = boton.closest('.producto-card');
+            const detalles = card.querySelector('.detalles-tecnicos');
+            
+            // Alternamos la clase para abrir/cerrar
+            detalles.classList.toggle('abierto');
+            
+            // Cambiamos el texto del botón
+            if (detalles.classList.contains('abierto')) {
+                boton.textContent = 'Cerrar';
+            } else {
+                boton.textContent = 'Ver más';
+            }
+        });
+    });
+</script>
 </body>
 </html>
 

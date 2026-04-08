@@ -176,4 +176,38 @@ h2 {
     background-color: var(--color-lima);
     color: var(--bg-fondo);
 }
+/* --- ESTILOS PARA LOS DETALLES TÉCNICOS --- */
+.detalles-tecnicos {
+    max-height: 0; /* Oculto por defecto */
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, margin 0.3s ease;
+    background: rgba(0, 0, 0, 0.2); /* Fondo sutil para diferenciarlo */
+    border-radius: 5px;
+}
+
+/* Clase que aplicaremos con JavaScript */
+.detalles-tecnicos.abierto {
+    max-height: 200px; /* Un valor lo suficientemente alto para el contenido */
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid rgba(191, 243, 95, 0.2);
+}
+
+.detalles-tecnicos ul {
+    list-style: none;
+}
+
+.detalles-tecnicos li {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.85rem;
+    color: var(--texto-gris);
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detalles-tecnicos li span {
+    color: var(--color-lima); /* El nombre del dato resalta en lima */
+    font-weight: bold;
+}
 
