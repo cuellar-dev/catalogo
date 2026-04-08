@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
     font-family: 'Titillium Web';
     src: url('Fuentes/Titillium_Web/TitilliumWeb-Regular.woff2') format('woff2');
@@ -175,3 +176,182 @@ h2 {
     background-color: var(--color-lima);
     color: var(--bg-fondo);
 }
+=======
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('Fuentes/Titillium_Web/TitilliumWeb-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: "drink"; /* Outfit */
+    src: url("Fuentes/Outfit/Outfit-VariableFont_wght.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url("Fuentes/Quicksand/Quicksand-VariableFont_wght.woff2") format("woff2");
+    font-display: swap;
+}
+
+/* --- VARIABLES DE COLOR (Fáciles de cambiar) --- */
+:root {
+    --bg-fondo: #121214;       /* Fondo principal oscuro */
+    --bg-header: #1e1e24;      /* Un poco más claro para el encabezado */
+    --bg-tarjeta: #25252d;     /* Color de la tarjeta (reemplaza al naranja) */
+    --color-lima: #bff35f;     /* TU COLOR LIMA - Acentos y botones */
+    --color-lima-hover: #a6ff00; /* Lima más brillante al pasar el mouse */
+    --texto-claro: #f8f9fa;    /* Para títulos */
+    --texto-gris: #adb5bd;     /* Para descripciones */
+}
+
+/* --- RESET BÁSICO --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--bg-fondo);
+    color: var(--texto-claro);
+}
+
+/* --- ENCABEZADOS --- */
+header {
+    background-color: var(--bg-header);
+    height: 70px;
+    border-bottom: 3px solid var(--color-lima); /* El lima brilla aquí */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+h1 {
+    color: var(--color-lima);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+h2 {
+    margin: 20px 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    color: var(--texto-claro);
+    text-align: center;
+}
+
+/* --- CONTENEDOR DE CATEGORÍA --- */
+#productos {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenido en pantallas grandes */
+}
+
+.categoria-container {
+    background-color: var(--bg-header);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+}
+
+.categoria-container h3 {
+    font-family: 'drink', sans-serif;
+    font-size: 1.8rem;
+    color: var(--texto-claro);
+    margin-bottom: 20px;
+    border-left: 4px solid var(--color-lima);
+    padding-left: 10px;
+}
+
+/* --- GRID DE PRODUCTOS --- */
+.grid-productos {
+    display: grid;
+    /* Esto hace que las tarjetas se acomoden solas dependiendo del tamaño de la pantalla */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* --- TARJETA DE PRODUCTO --- */
+.producto-card {
+    background-color: var(--bg-tarjeta);
+    border-radius: 10px;
+    overflow: hidden; /* Evita que la imagen se salga de los bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-producto {
+    /* Aquí va tu imagen */
+    background: url('IMG-20260310-WA0042.jpg') center/cover;
+    width: 100%;
+    height: 200px;
+    background-color: #333; /* Color de fondo por si la imagen tarda en cargar */
+}
+
+.info-producto {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Hace que el botón de comprar siempre quede abajo */
+}
+
+.nombre-producto {
+    font-family: 'drink', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: var(--texto-claro);
+    margin-bottom: 8px;
+}
+
+.descripcion-producto {
+    font-family: 'Titillium Web', sans-serif;
+    color: var(--texto-gris);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+/* --- SECCIÓN DE COMPRA --- */
+.compra-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+
+.price {
+    color: var(--color-lima);
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'drink', sans-serif;
+}
+
+.btn-detalles {
+    background-color: transparent;
+    color: var(--color-lima);
+    border: 1px solid var(--color-lima);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-detalles:hover {
+    background-color: var(--color-lima);
+    color: var(--bg-fondo);
+}
+>>>>>>> 4dba143d725fe0a441eeb4773106d5d2b0b202b8
