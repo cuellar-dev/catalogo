@@ -112,7 +112,7 @@ h2 {
 
 .imagen-producto {
     /* Aquí va tu imagen */
-    background: url('IMG-20260310-WA0042.jpg') center/cover;
+    background: url('images.jpg') center/cover;
     width: 100%;
     height: 200px;
     background-color: #333; /* Color de fondo por si la imagen tarda en cargar */
