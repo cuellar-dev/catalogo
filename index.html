@@ -3,83 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <title>Catálogo de Paneles</title>
 </head>
 <body>
-    <header>
-        <h1>CÁTALOGO DE VENTAS</h1>
-    </header>
-    
-    <main id="productos">
-        <h2>Explore entre las categorías y encuentre lo necesario:</h2>
-        
-        <section class="categoria-container">
-            <h3>Paneles Solares</h3>
-            
-            <div class="grid-productos">
-                <article class="producto-card">
-                    <div class="imagen-producto"></div>
-                    <div class="info-producto">
-                        <p class="nombre-producto">Panel Azul Alta Eficiencia</p>
-                        <p class="descripcion-producto">Panel monocristalino ideal para instalaciones residenciales. Máximo rendimiento en días nublados.</p>
-                        <div class="detalles-tecnicos">
-                            <ul>
-                                <li><span>Potencia:</span> 450W</li>
-                                <li><span>Amperaje (Imp):</span> 10.5A</li>
-                                <li><span>Voltaje (Vmp):</span> 41.5V</li>
-                                <li><span>Eficiencia:</span> 20.8%</li>
-                            </ul>
+    <div class="catalogo-wrapper">
+        <!-- <header>
+            <h1>CÁTALOGO DE VENTAS</h1>
+        </header> -->
+        <div class="boton-container">
+        <button id="btn-detalles">CONVERTIR A PDF</button></div>
+        <main id="productos">
+            <section class="categoria-container">
+                <div class="grid-productos">
+                    <div class="separador-cada4">
+                        <div class="h3-container">
+                            <h3>Paneles Solares</h3>
                         </div>
-                        <div class="compra-seccion">
-                            <p class="price">$180.00</p>
-                            <button class="btn-detalles">Ver más</button>
+                    <article class="producto-card">
+                        <div class="imagen-producto">
+                            <img src="images.jpg" alt="Panel Azul Alta Eficiencia">
                         </div>
+                        <div class="info-producto">
+                            <p class="nombre-producto">Panel Azul Alta Eficiencia</p>
+                            <p class="descripcion-producto">Panel monocristalino .</p>
+                            <div class="detalles-tecnicos">
+                                <ul>
+                                    <li><span>Potencia:</span> 450W</li>
+                                    <li><span>Voltaje (Vmp):</span> 41.5V</li>
+                                    <li><span>Eficiencia:</span> 20.8%</li>
+                                    <li><span>Amperaje (Imp):</span> 10.5A</li>
+                                </ul>
+                            </div>
+                            <div class="compra-seccion">
+                                <p class="price">$180.00</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="producto-card">
+                        <div class="imagen-producto">
+                            <img src="images.jpg" alt="Panel Azul Alta Eficiencia">
+                        </div>
+                        <div class="info-producto">
+                            <p class="nombre-producto">Panel Azul Alta Eficiencia</p>
+                            <p class="descripcion-producto">Panel monocristalino </p>
+                            <div class="detalles-tecnicos">
+                                <ul>
+                                    <li><span>Potencia:</span> 450W</li>
+                                    <li><span>Amperaje (Imp):</span> 10.5A</li>
+                                    <li><span>Voltaje (Vmp):</span> 41.5V</li>
+                                    <li><span>Eficiencia:</span> 20.8%</li>
+                                </ul>
+                            </div>
+                            <div class="compra-seccion">
+                                <p class="price">$180.00</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="producto-card">
+                        <div class="imagen-producto">
+                            <img src="images.jpg" alt="Panel Azul Alta Eficiencia">
+                        </div>
+                        <div class="info-producto">
+                            <p class="nombre-producto">Panel Azul Alta Eficiencia</p>
+                            <p class="descripcion-producto">Panel monocristalino </p>
+                            <div class="detalles-tecnicos">
+                                <ul>
+                                    <li><span>Potencia:</span> 450W</li>
+                                    <li><span>Amperaje (Imp):</span> 10.5A</li>
+                                    <li><span>Voltaje (Vmp):</span> 41.5V</li>
+                                    <li><span>Eficiencia:</span> 20.8%</li>
+                                </ul>
+                            </div>
+                            <div class="compra-seccion">
+                                <p class="price">$180.00</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="producto-card">
+                        <div class="imagen-producto">
+                            <img src="images.jpg" alt="Panel Azul Alta Eficiencia">
+                        </div>
+                        <div class="info-producto">
+                            <p class="nombre-producto">Panel Azul Alta Eficiencia</p>
+                            <p class="descripcion-producto">Panel monocristalino </p>
+                            <div class="detalles-tecnicos">
+                                <ul>
+                                    <li><span>Potencia:</span> 450W</li>
+                                    <li><span>Amperaje (Imp):</span> 10.5A</li>
+                                    <li><span>Voltaje (Vmp):</span> 41.5V</li>
+                                    <li><span>Eficiencia:</span> 20.8%</li>
+                                </ul>
+                            </div>
+                            <div class="compra-seccion">
+                                <p class="price">$180.00</p>
+                            </div>
+                        </div>
+                    </article>
                     </div>
-                </article>
-
-                <article class="producto-card">
-                    <div class="imagen-producto"></div>
-                    <div class="info-producto">
-                        <p class="nombre-producto">Kit Básico 1000W</p>
-                        <p class="descripcion-producto">Incluye panel, inversor y cableado básico para empezar a ahorrar.</p>
-                        <div class="detalles-tecnicos">
-                            <ul>
-                                <li><span>Potencia:</span> 450W</li>
-                                <li><span>Amperaje (Imp):</span> 10.5A</li>
-                                <li><span>Voltaje (Vmp):</span> 41.5V</li>
-                                <li><span>Eficiencia:</span> 20.8%</li>
-                            </ul>
+                    <div class="separador-cada4">
+                    <article class="producto-card">
+                        <div class="imagen-producto">
+                            <img src="images.jpg" alt="Panel Azul Alta Eficiencia">
                         </div>
-                        <div class="compra-seccion">
-                            <p class="price">$450.00</p>
-                            <button class="btn-detalles">Ver más</button>
+                        <div class="info-producto">
+                            <p class="nombre-producto">Panel Azul Alta Eficiencia</p>
+                            <p class="descripcion-producto">Panel monocristalino </p>
+                            <div class="detalles-tecnicos">
+                                <ul>
+                                    <li><span>Potencia:</span> 450W</li>
+                                    <li><span>Amperaje (Imp):</span> 10.5A</li>
+                                    <li><span>Voltaje (Vmp):</span> 41.5V</li>
+                                    <li><span>Eficiencia:</span> 20.8%</li>
+                                </ul>
+                            </div>
+                            <div class="compra-seccion">
+                                <p class="price">$180.00</p>
+                            </div>
                         </div>
+                    </article>
+                    <article class="producto-card">
+                        <div class="imagen-producto">
+                            <img src="images.jpg" alt="Panel Azul Alta Eficiencia">
+                        </div>
+                        <div class="info-producto">
+                            <p class="nombre-producto">Panel Azul Alta Eficiencia</p>
+                            <p class="descripcion-producto">Panel monocristalino .</p>
+                            <div class="detalles-tecnicos">
+                                <ul>
+                                    <li><span>Potencia:</span> 450W</li>
+                                    <li><span>Amperaje (Imp):</span> 10.5A</li>
+                                    <li><span>Voltaje (Vmp):</span> 41.5V</li>
+                                    <li><span>Eficiencia:</span> 20.8%</li>
+                                </ul>
+                            </div>
+                            <div class="compra-seccion">
+                                <p class="price">$180.00</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="producto-card">
+                        <div class="imagen-producto">
+                            <img src="images.jpg" alt="Panel Azul Alta Eficiencia">
+                        </div>
+                        <div class="info-producto">
+                            <p class="nombre-producto">Panel Azul Alta Eficiencia</p>
+                            <p class="descripcion-producto">Panel monocristalino </p>
+                            <div class="detalles-tecnicos">
+                                <ul>
+                                    <li><span>Potencia:</span> 450W</li>
+                                    <li><span>Amperaje (Imp):</span> 10.5A</li>
+                                    <li><span>Voltaje (Vmp):</span> 41.5V</li>
+                                    <li><span>Eficiencia:</span> 20.8%</li>
+                                </ul>
+                            </div>
+                            <div class="compra-seccion">
+                                <p class="price">$180.00</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="producto-card">
+                        <div class="imagen-producto">
+                            <img src="images.jpg" alt="Panel Azul Alta Eficiencia">
+                        </div>
+                        <div class="info-producto">
+                            <p class="nombre-producto">Panel Azul Alta Eficiencia</p>
+                            <p class="descripcion-producto">Panel monocristalino </p>
+                            <div class="detalles-tecnicos">
+                                <ul>
+                                    <li><span>Potencia:</span> 450W</li>
+                                    <li><span>Amperaje (Imp):</span> 10.5A</li>
+                                    <li><span>Voltaje (Vmp):</span> 41.5V</li>
+                                    <li><span>Eficiencia:</span> 20.8%</li>
+                                </ul>
+                            </div>
+                            <div class="compra-seccion">
+                                <p class="price">$180.00</p>
+                            </div>
+                        </div>
+                    </article>
                     </div>
-                </article>
-            </div>
-        </section>
-        
-    </main>
-    <script>
-    document.querySelectorAll('.btn-detalles').forEach(boton => {
-        boton.addEventListener('click', () => {
-            // Buscamos el contenedor de detalles dentro de la misma tarjeta
-            const card = boton.closest('.producto-card');
-            const detalles = card.querySelector('.detalles-tecnicos');
-            
-            // Alternamos la clase para abrir/cerrar
-            detalles.classList.toggle('abierto');
-            
-            // Cambiamos el texto del botón
-            if (detalles.classList.contains('abierto')) {
-                boton.textContent = 'Cerrar';
-            } else {
-                boton.textContent = 'Ver más';
-            }
-        });
-    });
-</script>
+                    <div class="separador-cada4">
+                    <article class="producto-card">
+                        <div class="imagen-producto">
+                            <img src="images.jpg" alt="Panel Azul Alta Eficiencia">
+                        </div>
+                        <div class="info-producto">
+                            <p class="nombre-producto">Panel Azul Alta Eficiencia</p>
+                            <p class="descripcion-producto">Panel monocristalino </p>
+                            <div class="detalles-tecnicos">
+                                <ul>
+                                    <li><span>Potencia:</span> 450W</li>
+                                    <li><span>Amperaje (Imp):</span> 10.5A</li>
+                                    <li><span>Voltaje (Vmp):</span> 41.5V</li>
+                                    <li><span>Eficiencia:</span> 20.8%</li>
+                                </ul>
+                            </div>
+                            <div class="compra-seccion">
+                                <p class="price">$180.00</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="producto-card">
+                        <div class="imagen-producto">
+                            <img src="images.jpg" alt="Panel Azul Alta Eficiencia">
+                        </div>
+                        <div class="info-producto">
+                            <p class="nombre-producto">Panel Azul Alta Eficiencia</p>
+                            <p class="descripcion-producto">Panel monocristalino </p>
+                            <div class="detalles-tecnicos">
+                                <ul>
+                                    <li><span>Potencia:</span> 450W</li>
+                                    <li><span>Amperaje (Imp):</span> 10.5A</li>
+                                    <li><span>Voltaje (Vmp):</span> 41.5V</li>
+                                    <li><span>Eficiencia:</span> 20.8%</li>
+                                </ul>
+                            </div>
+                            <div class="compra-seccion">
+                                <p class="price">$180.00</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="producto-card">
+                        <div class="imagen-producto">
+                            <img src="images.jpg" alt="Kit Básico 1000W">
+                        </div>
+                        <div class="info-producto">
+                            <p class="nombre-producto">Kit Básico 1000W</p>
+                            <p class="descripcion-producto">Incluye panel, inversor y cableado básico</p>
+                            <div class="detalles-tecnicos">
+                                <ul>
+                                    <li><span>Potencia:</span> 450W</li>
+                                    <li><span>Amperaje (Imp):</span> 10.5A</li>
+                                    <li><span>Voltaje (Vmp):</span> 41.5V</li>
+                                    <li><span>Eficiencia:</span> 20.8%</li>
+                                </ul>
+                            </div>
+                            <div class="compra-seccion">
+                                <p class="price">$450.00</p>
+                            </div>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js.js"></script>
 </body>
 </html>
 
