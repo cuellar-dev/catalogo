@@ -1,0 +1,73 @@
+{
+	"categorias": [
+		{
+			"nombre": "Brekers CD",
+			"articulos": [
+				[
+					"Breaker de CD ",
+					"Breaker para paneles",
+					"$180.00",
+					"Imagenes/IMG-20260323-WA0024.jpg",
+					[
+						["Potencia", "450W"],
+						["Amperaje (Imp)", "20A"]
+					]
+				],
+				[
+					"Breaker de CD ",
+					"Breaker para paneles",
+					"$180.00",
+					"Imagenes/IMG-20260323-WA0024.jpg",
+					[
+						["Potencia", "450W"],
+						["Amperaje (Imp)", "25A"]
+					]
+				],
+				[
+					"Breaker de CD ",
+					"Breaker para paneles",
+					"$180.00",
+					"Imagenes/IMG-20260323-WA0024.jpg",
+					[
+						["Potencia", "450W"],
+						["Amperaje (Imp)", "50A"]
+					]
+				],
+				[
+					"Breaker de CD ",
+					"Breaker para paneles",
+					"$180.00",
+					"Imagenes/IMG-20260323-WA0024.jpg",
+					[
+						["Potencia", "450W"],
+						["Amperaje (Imp)", "63A"]
+					]
+				]
+			]
+		},
+        {
+        "nombre": "Veladores y cosa",
+        "articulos":[
+            [
+					"Velador de línea Sinotimer",
+					"Configurable en Alto voltaje, Bajo Voltaje y sobre corriente",
+					"$180.00",
+					"Imagenes/IMG-20260413-WA0005.jpg",
+					[
+						["Voltaje (Vmp)", "110-220V"],
+						["Amperaje (Imp)", "40A"]
+					]
+				],
+				[
+					"Breaker DC",
+					"Breaker DC para baterias",
+					"$180.00",
+					"Imagenes/IMG-20260413-WA0002.jpg",
+					[
+						["Amperaje (Imp)", "100A"]
+					]
+				]
+        ]
+        }
+	]
+}
