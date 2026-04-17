@@ -1,5 +1,18 @@
 const URL_DATOS = 'datos.json';
 const MAX_ITEMS_POR_SEPARADOR = 4;
+const ALTO_A4_MM = 297;
+const AJUSTE_CORTE_MM = 0.5;
+
+function actualizarAlturaContenedorPDF() {
+    const productos = document.getElementById('productos');
+    if (!productos) return;
+
+    const totalCategorias = productos.querySelectorAll('.categoria-container').length;
+    const alturaBaseMM = ALTO_A4_MM * totalCategorias;
+    const alturaTotalMM = Math.max(0, alturaBaseMM - AJUSTE_CORTE_MM);
+
+    productos.style.height = `${alturaTotalMM}mm`;
+}
 
 function normalizarArticulo(articuloArray) {
     const [nombre, descripcion, precio, imagen, detalles] = articuloArray;
@@ -115,6 +128,13 @@ function renderizarCatalogo(data) {
         section.appendChild(grid);
         productos.appendChild(section);
     });
+
+    const ultimaCategoria = productos.querySelector('.categoria-container:last-child');
+    if (ultimaCategoria) {
+        ultimaCategoria.style.marginBottom = '0';
+    }
+
+    actualizarAlturaContenedorPDF();
 }
 
 async function cargarCatalogo() {
@@ -132,6 +152,8 @@ function configurarBotonPDF() {
     boton.addEventListener('click', async () => {
         const contenido = document.getElementById('productos');
         if (!contenido) return;
+
+        actualizarAlturaContenedorPDF();
 
         const opciones = {
             margin: 0,

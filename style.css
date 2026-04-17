@@ -71,7 +71,6 @@ h2 {
     color: var(--texto-claro);
     text-align: center;
 }
-
 /* --- CONTENEDOR DE CATEGORÍA --- */
 #productos {
     width: 210mm;
@@ -87,10 +86,12 @@ h2 {
     padding: 20px;
     padding-bottom: 8px;
     margin-bottom: 30px;
-    border: 1px solid #333;
     width: 100%;
 }
-
+/* Fuerza que solo el ultimo bloque real dentro de #productos no tenga margen inferior */
+#productos > .categoria-container:last-child {
+    margin-bottom: 0;
+}
 .categoria-container h3 {
     font-family: 'drink', sans-serif;
     font-size: 1.8rem;
