@@ -4,49 +4,45 @@
 			"nombre": "Brekers CD",
 			"articulos": [
 				[
-					"Breaker de CD ",
+					"Breaker de CD 20A",
 					"Breaker para paneles",
 					"$180.00",
 					"Imagenes/IMG-20260323-WA0024.jpg",
 					[
-						["Potencia", "450W"],
-						["Amperaje (Imp)", "20A"]
+
 					]
 				],
 				[
-					"Breaker de CD ",
+					"Breaker de CD 25A",
 					"Breaker para paneles",
 					"$180.00",
 					"Imagenes/IMG-20260323-WA0024.jpg",
 					[
-						["Potencia", "450W"],
-						["Amperaje (Imp)", "25A"]
+
 					]
 				],
 				[
-					"Breaker de CD ",
+					"Breaker de CD 50A",
 					"Breaker para paneles",
 					"$180.00",
 					"Imagenes/IMG-20260323-WA0024.jpg",
 					[
-						["Potencia", "450W"],
-						["Amperaje (Imp)", "50A"]
+
 					]
 				],
 				[
-					"Breaker de CD ",
+					"Breaker de CD 63A",
 					"Breaker para paneles",
 					"$180.00",
 					"Imagenes/IMG-20260323-WA0024.jpg",
 					[
-						["Potencia", "450W"],
-						["Amperaje (Imp)", "63A"]
+
 					]
 				]
 			]
 		},
         {
-        "nombre": "Veladores y cosa",
+        "nombre": "Veladores de Voltaje",
         "articulos":[
             [
 					"Velador de línea Sinotimer",
@@ -54,20 +50,105 @@
 					"$180.00",
 					"Imagenes/IMG-20260413-WA0005.jpg",
 					[
-						["Voltaje (Vmp)", "110-220V"],
-						["Amperaje (Imp)", "40A"]
+						["Voltaje", "110-220V"],
+						["Amperaje", "40A"]
 					]
 				],
 				[
-					"Breaker DC",
-					"Breaker DC para baterias",
+					"Velador de línea Sinotimer",
+					"Configurable en Alto voltaje, Bajo Voltaje y sobre corriente con temporizador de encendido",
 					"$180.00",
-					"Imagenes/IMG-20260413-WA0002.jpg",
+					"Imagenes/velador.jpg",
 					[
-						["Amperaje (Imp)", "100A"]
+						["Voltaje", "110-220V"],
+						["Amperaje", "40A"]
 					]
 				]
         ]
-        }
+        },
+		{	
+			"nombre" : "Inversores híbridos",
+			"articulos": [
+        [
+            "Inversor PowMr 2.4KW",
+            "Inversor Híbrido Off-Grid con controlador solar MPPT integrado",
+            "$320",
+            "Imagenes/inversor1.jpg",
+            [
+                ["Controlador Solar", "PWM 50A"],
+                ["Voltaje DC", "24V"]
+            ]
+        ],
+        [
+            "Inversor Híbrido 3.6KW",
+            "Inversor de alta eficiencia con controlador MPPT integrado",
+            "$400",
+            "Imagenes/inversor2.jpg",
+            [
+                ["Controlador Solar", "PWM 50A"],
+                ["Voltaje DC", "24V"]
+            ]
+        ],
+        [
+            "Inversor PowMr 4KW",
+            "Inversor híbrido con potente carga solar MPPT y soporte para baterias de litio",
+            "$480",
+            "Imagenes/inversor3.jpg",
+            [
+                ["Controlador Solar", "PWM 50A"],
+                ["Voltaje DC", "24V"]
+            ]
+        ],
+        [
+            "Inversor Sumry 4KW",
+            "Maximiza tu energía, con una carga ultra rápida de 110A y onda senoidal pura.",
+            "$480",
+            "Imagenes/inversor4.jpg",
+            [
+                ["Controlador Solar", "PWM 50A"],
+                ["Voltaje DC", "24V"]
+            ]
+        ]
+    ]
+		},
+		{
+			"nombre": "Transfers ATS",
+			"articulos":[
+				[
+					"Transfer Geya 3P",
+					"Conmuta entre la red principal y el sistema de energía de respaldo",
+					"$180.00",
+					"Imagenes/transfer.jpg",
+					[
+						["Voltaje", "110V"],
+						["Amperaje", "100A"]
+					]
+				],
+				[
+					"Transfer Geya",
+					"Transfer automático para sistemas de energía de respaldo con capacidad de hasta 63A",
+					"$180.00",
+					"Imagenes/transfer2.jpg",
+					[
+						["Amperaje", "63A"]
+					]
+				]
+			]
+		},
+		{
+			"nombre": "Baterias",
+			"articulos":[
+				[
+					"Bateria Humsienk",
+					"Batería de alto rendimiento con tecnología AGM de ciclo profundo",
+					"$180.00",
+					"Imagenes/bateria.jpg",
+					[
+						["Voltaje", "12V"],
+						["Capacidad", "310Ah"]
+					]
+				]
+			]
+		}
 	]
 }

@@ -31,11 +31,17 @@ function crearDetallesTecnicos(detalles) {
 
     const lista = document.createElement('ul');
     detalles.forEach((detalle) => {
+        if (!Array.isArray(detalle) || detalle.length < 2) return;
         const [clave, valor] = detalle;
+        if (!clave && !valor) return;
         const item = document.createElement('li');
         item.innerHTML = `<span>${clave}:</span> ${valor}`;
         lista.appendChild(item);
     });
+
+    if (lista.children.length === 0) {
+        contenedor.style.display = 'none';
+    }
 
     contenedor.appendChild(lista);
     return contenedor;
@@ -158,9 +164,9 @@ function configurarBotonPDF() {
         const opciones = {
             margin: 0,
             filename: 'Catalogo.pdf',
-            image: { type: 'jpeg', quality: 0.98 },
+            image: { type: 'jpeg', quality: 1},
             html2canvas: {
-                scale: 2,
+                scale: 2.3,
                 useCORS: true,
                 x: 0,
                 y: 0,
