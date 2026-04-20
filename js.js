@@ -176,9 +176,9 @@ function configurarBotonPDF() {
         const opciones = {
             margin: 0,
             filename: 'Catalogo.pdf',
-            image: { type: 'jpeg', quality: 1},
+            image: { type: 'jpeg', quality: 0.8},
             html2canvas: {
-                scale: 2.3,
+                scale: 2,
                 useCORS: true,
                 x: 0,
                 y: 0,
@@ -187,7 +187,7 @@ function configurarBotonPDF() {
                 windowWidth: contenido.scrollWidth,
                 windowHeight: contenido.scrollHeight
             },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait'}
         };
 
         await html2pdf().set(opciones).from(contenido).save();
