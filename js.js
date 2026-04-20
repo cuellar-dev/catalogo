@@ -7,8 +7,9 @@ function actualizarAlturaContenedorPDF() {
     const productos = document.getElementById('productos');
     if (!productos) return;
 
-    const totalCategorias = productos.querySelectorAll('.categoria-container').length;
-    const alturaBaseMM = ALTO_A4_MM * totalCategorias;
+    // Contar la cantidad de separadores (cada separador = 1 página A4)
+    const totalSeparadores = productos.querySelectorAll('.separador-cada4').length;
+    const alturaBaseMM = ALTO_A4_MM * totalSeparadores;
     const alturaTotalMM = Math.max(0, alturaBaseMM - AJUSTE_CORTE_MM);
 
     productos.style.height = `${alturaTotalMM}mm`;
@@ -62,10 +63,21 @@ function crearProductoCard(articulo) {
 
     const info = document.createElement('div');
     info.className = 'info-producto';
-    info.innerHTML = `
-        <p class="nombre-producto">${articulo.nombre}</p>
-        <p class="descripcion-producto">${articulo.descripcion}</p>
-    `;
+    const nombreProducto = document.createElement('p');
+    nombreProducto.className = 'nombre-producto';
+    nombreProducto.textContent = articulo.nombre;
+
+    const descripcionProducto = document.createElement('p');
+    descripcionProducto.className = 'descripcion-producto';
+    const descripcion = String(articulo.descripcion || '').trim();
+    if (descripcion) {
+        descripcionProducto.textContent = descripcion;
+    } else {
+        descripcionProducto.style.display = 'none';
+    }
+
+    info.appendChild(nombreProducto);
+    info.appendChild(descripcionProducto);
 
     info.appendChild(crearDetallesTecnicos(articulo.detalles));
 

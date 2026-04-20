@@ -1,40 +1,67 @@
 {
 	"categorias": [
 		{
-			"nombre": "Brekers CD",
+			"nombre": "Brekers",
 			"articulos": [
 				[
-					"Breaker de CD 20A",
-					"Breaker para paneles",
-					"$180.00",
+					"Breaker de DC 20A",
+					"Breaker para corriente directa",
+					"$12",
 					"Imagenes/IMG-20260323-WA0024.jpg",
 					[
 
 					]
 				],
 				[
-					"Breaker de CD 25A",
-					"Breaker para paneles",
-					"$180.00",
+					"Breaker de DC 25A",
+					"Breaker para corriente directa",
+					"$12",
 					"Imagenes/IMG-20260323-WA0024.jpg",
 					[
 
 					]
 				],
 				[
-					"Breaker de CD 50A",
-					"Breaker para paneles",
-					"$180.00",
+					"Breaker de DC 50A",
+					"Breaker para corriente directa",
+					"$12",
 					"Imagenes/IMG-20260323-WA0024.jpg",
 					[
 
 					]
 				],
 				[
-					"Breaker de CD 63A",
-					"Breaker para paneles",
-					"$180.00",
+					"Breaker de DC 63A",
+					"Breaker para corriente directa",
+					"$12",
 					"Imagenes/IMG-20260323-WA0024.jpg",
+					[
+
+					]
+				],
+				[
+					"Breaker de DC 100A",
+					"Breaker para corriente directa",
+					"$18",
+					"Imagenes/braeker.jpg",
+					[
+
+					]
+				],
+				[
+					"Breaker de DC 125A",
+					"Breaker para corriente directa",
+					"$18",
+					"Imagenes/braeker.jpg",
+					[
+
+					]
+				],
+				[
+					"Breaker de AC 50A",
+					"Breaker para corriente alterna",
+					"$15",
+					"Imagenes/breakerac.jpg",
 					[
 
 					]
@@ -45,7 +72,7 @@
         "nombre": "Veladores de Voltaje",
         "articulos":[
             [
-					"Velador de línea Sinotimer",
+					"Velador de línea Sinotimer de 2 Funciones",
 					"Configurable en Alto voltaje, Bajo Voltaje y sobre corriente",
 					"$180.00",
 					"Imagenes/IMG-20260413-WA0005.jpg",
@@ -55,13 +82,33 @@
 					]
 				],
 				[
-					"Velador de línea Sinotimer",
-					"Configurable en Alto voltaje, Bajo Voltaje y sobre corriente con temporizador de encendido",
+					"Velador de línea Sinotimer 3 Funciones",
+					"Configurable en Alto/Bajo Voltaje y sobre corriente.Temporizador de encendido. lectura de potencia en tiempo real",
 					"$180.00",
 					"Imagenes/velador.jpg",
 					[
 						["Voltaje", "110-220V"],
 						["Amperaje", "40A"]
+					]
+				],
+				[
+					"Velador de línea Sinotimer de 2 Funciones",
+					"Configurable en Alto voltaje, Bajo Voltaje y sobre corriente",
+					"$180.00",
+					"Imagenes/IMG-20260413-WA0005.jpg",
+					[
+						["Voltaje", "110-220V"],
+						["Amperaje", "63A"]
+					]
+				],
+				[
+					"Velador de línea Sinotimer de 3 Funciones",
+					"Configurable en Alto/Bajo Voltaje y Sobre corriente. Temporizador de encendido y lectura de potencia en tiempo real",
+					"$180.00",
+					"Imagenes/velador.jpg",
+					[
+						["Voltaje", "110-220V"],
+						["Amperaje", "63A"]
 					]
 				]
         ]
@@ -70,54 +117,86 @@
 			"nombre" : "Inversores híbridos",
 			"articulos": [
         [
-            "Inversor PowMr 2.4KW",
-            "Inversor Híbrido Off-Grid con controlador solar MPPT integrado",
+            "PowMr 2.4KW OFF-GRID",
+            "",
             "$320",
-            "Imagenes/inversor1.jpg",
+            "Imagenes/inversor1.png",
             [
-                ["Controlador Solar", "PWM 50A"],
-                ["Voltaje DC", "24V"]
+				["Voltaje AC", "110V"],
+                ["Voltaje DC", "24V"],
+				["PWM","50A"],
+				["Rango de Operacion","55-350VDC"],
+				["Onda","Sinusoidal pura"]
             ]
         ],
         [
-            "Inversor Híbrido 3.6KW",
-            "Inversor de alta eficiencia con controlador MPPT integrado",
+            "PowMr 3.6KW",
+            "",
             "$400",
-            "Imagenes/inversor2.jpg",
+            "Imagenes/inversor2.png",
             [
-                ["Controlador Solar", "PWM 50A"],
-                ["Voltaje DC", "24V"]
+				["Voltaje AC", "110V"],
+                ["Voltaje DC", "24V"],
+				["MPPT", "120A"],
+				["Rango de Operacion","55-350VDC"],
+				["Onda","Sinusoidal pura"]
             ]
         ],
         [
-            "Inversor PowMr 4KW",
-            "Inversor híbrido con potente carga solar MPPT y soporte para baterias de litio",
+            "PowMr 4KW",
+            "",
             "$480",
-            "Imagenes/inversor3.jpg",
+            "Imagenes/inversor3prob.jpg",
             [
-                ["Controlador Solar", "PWM 50A"],
-                ["Voltaje DC", "24V"]
+				["Voltaje AC", "110V"],
+                ["Voltaje DC", "24V"],
+				["MPPT", "120A"],
+				["Rango de Operacion","55-350VDC"],
+				["Onda","Sinusoidal pura"]
             ]
         ],
         [
-            "Inversor Sumry 4KW",
-            "Maximiza tu energía, con una carga ultra rápida de 110A y onda senoidal pura.",
+            "Sumry 4KW",
+            "",
             "$480",
-            "Imagenes/inversor4.jpg",
+            "Imagenes/inversor4.png",
             [
-                ["Controlador Solar", "PWM 50A"],
-                ["Voltaje DC", "24V"]
+				["Voltaje AC", "110V"],
+                ["Voltaje DC", "24V"],
+				["MPPT", "120A"],
+				["Rango de Operacion","55-350VDC"],
+				["Onda","Sinusoidal pura"]
             ]
         ]
     ]
 		},
 		{
-			"nombre": "Transfers ATS",
+			"nombre": "Transfers",
 			"articulos":[
 				[
 					"Transfer Geya 3P",
 					"Conmuta entre la red principal y el sistema de energía de respaldo",
-					"$180.00",
+					"$70",
+					"Imagenes/transfer3.jpg",
+					[
+						["Voltaje", "110V"],
+						["Amperaje", "100A"]
+					]
+				],
+				[
+					"Transfer Geya 3P",
+					"Conmuta entre la red principal y el sistema de energía de respaldo",
+					"$70",
+					"Imagenes/transfer3.jpg",
+					[
+						["Voltaje", "220V"],
+						["Amperaje", "100A"]
+					]
+				],
+				[
+					"Transfer Geya 2P",
+					"Conmuta entre la red principal y el sistema de energía de respaldo",
+					"$60",
 					"Imagenes/transfer.jpg",
 					[
 						["Voltaje", "110V"],
@@ -127,9 +206,10 @@
 				[
 					"Transfer Geya",
 					"Transfer automático para sistemas de energía de respaldo con capacidad de hasta 63A",
-					"$180.00",
+					"$50",
 					"Imagenes/transfer2.jpg",
 					[
+						["Voltaje", "110V"],
 						["Amperaje", "63A"]
 					]
 				]
@@ -139,13 +219,80 @@
 			"nombre": "Baterias",
 			"articulos":[
 				[
-					"Bateria Humsienk",
-					"Batería de alto rendimiento con tecnología AGM de ciclo profundo",
-					"$180.00",
+					"Bateria Humsienk 4kWh",
+					"Batería de alto rendimiento con tecnología LiFePO4 ",
+					"$650",
 					"Imagenes/bateria.jpg",
 					[
 						["Voltaje", "12V"],
-						["Capacidad", "310Ah"]
+						["Capacidad", "310Ah"],
+						["BMS", "100A"]
+					]
+				],
+				[
+					"Bateria Eco-Worthy 2kWh",
+					"Batería de alto rendimiento con tecnología LiFePO4 con Bluetooth integrado",
+					"$340",
+					"Imagenes/bateria2.jpg",
+					[
+						["Voltaje", "12V"],
+						["Capacidad", "150Ah"],
+						["Smart BMS", "100A"]
+					]
+				],
+				[
+					"Bateria Eco-Worthy 1.2Kwh",
+					"Batería de alto rendimiento con tecnología LiFePO4 con Bluetooth integrado",
+					"$270",
+					"Imagenes/bateria3.jpg",
+					[
+						["Voltaje", "12V"],
+						["Capacidad", "100Ah"],
+						["Smart BMS", "100A"]
+					]
+				],
+				[
+					"Bateria Humsienk 1.2kWh",
+					"Batería de alto rendimiento con tecnología LiFePO4 ",
+					"$650",
+					"Imagenes/bateria4.jpg",
+					[
+						["Voltaje", "12V"],
+						["Capacidad", "310Ah"],
+						["BMS", "100A"]
+					]
+				],
+				[
+					"Bateria Humsienk Eco-Worthy",
+					"Batería de alto rendimiento con tecnología LiFePO4 Bluetooth",
+					"$650",
+					"Imagenes/bateria5.jpg",
+					[
+						["Voltaje", "12V"],
+						["Capacidad", "310Ah"],
+						["Smart BMS", "200A"]
+					]
+				],
+				[
+					"Bateria Humsienk",
+					"Batería de alto rendimiento con tecnología LiFePO4 ",
+					"$650",
+					"Imagenes/bateria.jpg",
+					[
+						["Voltaje", "12V"],
+						["Capacidad", "310Ah"],
+						["BMS", "100A"]
+					]
+				],
+				[
+					"Bateria Humsienk",
+					"Batería de alto rendimiento con tecnología LiFePO4 ",
+					"$650",
+					"Imagenes/bateria.jpg",
+					[
+						["Voltaje", "12V"],
+						["Capacidad", "310Ah"],
+						["BMS", "100A"]
 					]
 				]
 			]

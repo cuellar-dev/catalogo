@@ -169,6 +169,7 @@ h2 {
     display: flex;
     flex-direction: column;
     flex-grow: 1; 
+    padding-bottom: 8px;
 }
 .imagen-producto.horizontal {
     aspect-ratio: 16 / 10;
@@ -180,12 +181,6 @@ h2 {
 
 .imagen-producto.square {
     aspect-ratio: 1 / 1;
-}
-.info-producto {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; 
 }
 
 .nombre-producto {
@@ -212,7 +207,7 @@ h2 {
     align-items: center;
     margin-top: auto;
     border-top: 1px solid #333;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .price {
@@ -250,7 +245,7 @@ h2 {
     background: rgba(0, 0, 0, 0.2); /* Fondo sutil para diferenciarlo */
     border-radius: 5px;
     border: 1px solid rgba(247, 186, 0, 0.2);
-    min-height: 73px;
+
 }
 
 .detalles-tecnicos ul {
